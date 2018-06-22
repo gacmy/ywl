@@ -1,0 +1,21 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:colorControlHighlight">#000000</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <!--导航栏不透明--> <!--导航栏不覆盖内容-->
+        <item name="android:windowTranslucentNavigation">false</item>
+        <!--设置状态栏为透明色-->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <!--导航栏为黑色-->
+        <item name="android:navigationBarColor">@android:color/black</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="android:windowIsTranslucent">true</item>
+
+    </style>
+
+</resources>

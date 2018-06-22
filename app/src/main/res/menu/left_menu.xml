@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_all"
+            android:icon="@mipmap/ic_menu_content"
+            android:title="全部内容"/>
+        <item
+            android:id="@+id/nav_collect"
+            android:icon="@mipmap/ic_collect"
+            android:title="我的收藏"/>
+        <item
+            android:id="@+id/nav_comment"
+            android:icon="@mipmap/ic_comment"
+
+            android:title="我的评论"/>
+        <item
+            android:id="@+id/nav_mode"
+            android:icon="@mipmap/ic_menu_light"
+
+            android:title="白天模式"/>
+    </group>
+
+    <item android:title="其它">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@mipmap/ic_share"
+
+                android:title="分享好友"
+                />
+            <item
+                android:id="@+id/nav_feedback"
+                android:icon="@mipmap/ic_feedback"
+
+                android:title="帮助与反馈"/>
+
+            <item
+                android:id="@+id/nav_check_version"
+                android:icon="@mipmap/ic_check_version"
+
+                android:title="检查更新"/>
+        </menu>
+    </item>
+
+</menu>

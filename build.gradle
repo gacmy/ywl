@@ -1,0 +1,58 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.0.0'
+
+        classpath 'com.jakewharton:butterknife-gradle-plugin:8.4.0'
+        classpath 'com.neenbedankt.gradle.plugins:android-apt:1.8'
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+ext {
+    versions = [
+            "buildToolsVersion": "26.0.2",
+            "compileSdkVersion": 26,
+            "minSdkVersion"    : 16,
+            "targetSdkVersion" : 26,
+            "versionCode"      : 20,
+            "versionName"      : "2.0.0"
+    ]
+    dependencies = [
+            // 依赖包 ：
+            "v7" : 'com.android.support:appcompat-v7:26.1.0',
+            "recyclerview" : 'com.android.support:recyclerview-v7:26.1.0',
+
+            "design" : 'com.android.support:design:26.1.0',
+            "okhttp" : 'com.squareup.okhttp3:okhttp:3.10.0',
+            "jsonrpc-ws-android" : 'fi.vtt.nubomedia:jsonrpc-ws-android:1.1.0',
+            "utilities-android" : 'fi.vtt.nubomedia:utilities-android:1.0.2',
+            "webrtcpeer-android" : 'fi.vtt.nubomedia:webrtcpeer-android:1.1.2',
+            "kurento-room-client-android" : 'fi.vtt.nubomedia:kurento-room-client-android:1.1.2',
+            "react-native" : 'com.facebook.react:react-native:+',
+            "gson" : 'com.google.code.gson:gson:2.8.2',
+            "logging-interceptor" : 'com.squareup.okhttp3:logging-interceptor:3.6.0',
+            "rxjava" : 'io.reactivex.rxjava2:rxjava:2.0.2',
+            "rxandroid" : 'io.reactivex.rxjava2:rxandroid:2.0.2',
+            "swpieback" : 'me.imid.swipebacklayout.lib:library:1.1.0',
+            "butterknife" : 'com.jakewharton:butterknife:8.4.0',
+            "butterknifeprocessor" : 'com.jakewharton:butterknife-compiler:8.4.0',
+
+    ]
+}
+allprojects {
+    repositories {
+        google()
+        jcenter()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
